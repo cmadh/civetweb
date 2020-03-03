@@ -1,4 +1,4 @@
-# Determines what CMake APIs we can rely on
+web# Determines what CMake APIs we can rely on
 cmake_minimum_required (VERSION 2.8.11)
 if (${CMAKE_VERSION} VERSION_GREATER 3.2.2)
   cmake_policy(VERSION 3.2.2)
@@ -89,7 +89,7 @@ option(CIVETWEB_ENABLE_IPV6 "Enables the IP version 6 support" OFF)
 message(STATUS "IP Version 6 - ${CIVETWEB_ENABLE_IPV6}")
 
 # Websocket support
-option(CIVETWEB_ENABLE_WEBSOCKETS "Enable websockets connections" OFF)
+option(CIVETWEB_ENABLE_WEBSOCKETS "Enable websockets connections" ON)
 message(STATUS "Websockets support - ${CIVETWEB_ENABLE_WEBSOCKETS}")
 
 # Server statistics support
